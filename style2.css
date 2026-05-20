@@ -1,0 +1,198 @@
+/* body {
+        background-color: aqua;
+      } */
+.monitor {
+  padding: 10px;
+}
+.screen {
+  display: flex;
+}
+.sbox1 {
+  background-color: yellow;
+  width: 20%;
+  height: 70px;
+  /* padding: 40px; */
+  margin-right: 10px;
+}
+.sbox2 {
+  background-color: orange;
+  width: 80%;
+  height: 70px;
+  /* padding: 40px; */
+}
+
+.box3 {
+  background-color: red;
+  height: 60px;
+  margin-top: 10px;
+}
+
+.box4 {
+  background-color: aqua;
+  height: 300px;
+  margin-top: 10px;
+}
+.bottom {
+  display: flex;
+  justify-content: end;
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  display: flex;
+  width: 70%;
+}
+
+.b2 {
+  background-color: aqua;
+  width: 50%;
+  height: 180px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.b3 {
+  background-color: aqua;
+  width: 50%;
+  height: 180px;
+
+  margin-top: 10px;
+}
+
+.line {
+  border: 3px solid rgb(197, 195, 195);
+  margin-top: 50px;
+  margin-right: 10px;
+}
+
+.lastbox {
+  background-color: aqua;
+  height: 100px;
+  margin-top: 20px;
+}
+
+
+/* .test{
+  display: grid;
+  gap: 50px;
+  grid-template-rows: 20px 20px 20px 20px 20px;
+  
+  
+ 
+
+  .boxx1 {
+    background-color: bisque;
+    gap: 80px;
+    height: 40px;
+    width: 20%;
+  }
+
+  .boxx2{
+    background-color: bisque;
+
+    gap: 80px;
+    height: 40px;
+    width: 20%;
+  }
+} */
+
+
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px 30px 20px 12px;
+  }
+
+  .screen {
+    display: flex;
+    flex-direction: column;
+
+    .sbox1 {
+      background-color: yellow;
+      width: 100%;
+      margin-bottom: 10px;
+      height: 70px;
+    }
+    .sbox2 {
+      background-color: orange;
+      width: 100%;
+    }
+  }
+
+  .box3 {
+    width: 100%;
+  }
+
+  .box4 {
+    background-color: aqua;
+
+    height: 180px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .bottom {
+    flex-direction: column;
+
+    .left {
+      width: 100%;
+      margin-left: 10px;
+      margin-bottom: 30px;
+    }
+
+    .right {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .b2,
+    .b3 {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/* Tab */
+
+/* @media (min-width:769px) and (max-width:992px) */
+
+@media (min-width: 700px) {
+  .screen {
+    display: flex;
+    flex-direction: row;
+
+    .sbox1 {
+      width: 30%;
+      height: 100px;
+    }
+    .sbox2 {
+      width: 70%;
+      height: 100px;
+    }
+  }
+
+  .box4 {
+    height: 300px;
+    margin-bottom: 10px;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: row;
+
+    .left {
+      width: 30%;
+      margin-right: 20px;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
